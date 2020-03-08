@@ -1,0 +1,100 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="KrajBy.ShowOptions"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:tool="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"    
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True" Loaded="PhoneApplicationPage_Loaded" Unloaded="PhoneApplicationPage_Unloaded">
+
+    <!--LayoutRoot представляет корневую сетку, где размещается все содержимое страницы-->
+    <Grid x:Name="LayoutRoot" Background="#FFFFF6CB">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel содержит имя приложения и заголовок страницы-->
+        <StackPanel Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock Text="Портал kraj.by" FontSize="35" Foreground="#3a3a3a"/>
+            <TextBlock Text="Настройки" FontSize="50" Foreground="#3a3a3a"/>
+        </StackPanel>
+
+        <!--ContentPanel – поместите здесь дополнительное содержимое-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <ScrollViewer>
+                <StackPanel>
+                    <TextBlock FontSize="30" Text="Погоду показывать для" Foreground="#3a3a3a" />
+                    <RadioButton x:Name="Braslav" BorderBrush="#3a3a3a" Foreground="#3a3a3a" Content="Браслав" HorizontalAlignment="Left" VerticalAlignment="Top" Tap="RB_Tap" >
+                    	<RadioButton.Background>
+                            <SolidColorBrush Color="#3a3a3a"/>
+                    	</RadioButton.Background>
+                    </RadioButton>
+                    <RadioButton x:Name="Vileika" BorderBrush="#3a3a3a" Foreground="#3a3a3a" Content="Вилейка" HorizontalAlignment="Left" VerticalAlignment="Top" Tap="RB_Tap">
+                        <RadioButton.Background>
+                            <SolidColorBrush Color="#3a3a3a"/>
+                        </RadioButton.Background>
+                    </RadioButton>
+                    <RadioButton x:Name="Vologin" BorderBrush="#3a3a3a" Foreground="#3a3a3a" Content="Воложин" HorizontalAlignment="Left" VerticalAlignment="Top" Tap="RB_Tap">
+                        <RadioButton.Background>
+                            <SolidColorBrush Color="#3a3a3a"/>
+                        </RadioButton.Background>
+                    </RadioButton>
+                    <RadioButton x:Name="Glubokoe" BorderBrush="#3a3a3a" Foreground="#3a3a3a" Content="Глубокое" HorizontalAlignment="Left" VerticalAlignment="Top" Tap="RB_Tap">
+                        <RadioButton.Background>
+                            <SolidColorBrush Color="#3a3a3a"/>
+                        </RadioButton.Background>
+                    </RadioButton>
+                    <RadioButton x:Name="Dokshitsi" BorderBrush="#3a3a3a" Foreground="#3a3a3a" Content="Докшицы" HorizontalAlignment="Left" VerticalAlignment="Top" Tap="RB_Tap">
+                        <RadioButton.Background>
+                            <SolidColorBrush Color="#3a3a3a"/>
+                        </RadioButton.Background>
+                    </RadioButton>
+                    <RadioButton x:Name="Logoisk" BorderBrush="#3a3a3a" Foreground="#3a3a3a" Content="Логойск" HorizontalAlignment="Left" VerticalAlignment="Top" Tap="RB_Tap">
+                        <RadioButton.Background>
+                            <SolidColorBrush Color="#3a3a3a"/>
+                        </RadioButton.Background>
+                    </RadioButton>
+                    <RadioButton x:Name="Molodecho" BorderBrush="#3a3a3a" Foreground="#3a3a3a" Content="Молодечно" HorizontalAlignment="Left" VerticalAlignment="Top" Tap="RB_Tap">
+                        <RadioButton.Background>
+                            <SolidColorBrush Color="#3a3a3a"/>
+                        </RadioButton.Background>
+                    </RadioButton>
+                    <RadioButton x:Name="Myadel" BorderBrush="#3a3a3a" Foreground="#3a3a3a" Content="Мядель" HorizontalAlignment="Left" VerticalAlignment="Top" Tap="RB_Tap">
+                        <RadioButton.Background>
+                            <SolidColorBrush Color="#3a3a3a"/>
+                        </RadioButton.Background>
+                    </RadioButton>
+                    <RadioButton x:Name="Ostrovets" BorderBrush="#3a3a3a" Foreground="#3a3a3a" Content="Островец" HorizontalAlignment="Left" VerticalAlignment="Top" Tap="RB_Tap">
+                        <RadioButton.Background>
+                            <SolidColorBrush Color="#3a3a3a"/>
+                        </RadioButton.Background>
+                    </RadioButton>
+                    <RadioButton x:Name="Oshmyani" BorderBrush="#3a3a3a" Foreground="#3a3a3a" Content="Ошмяны" HorizontalAlignment="Left" VerticalAlignment="Top" Tap="RB_Tap">
+                        <RadioButton.Background>
+                            <SolidColorBrush Color="#3a3a3a"/>
+                        </RadioButton.Background>
+                    </RadioButton>
+                    <RadioButton x:Name="Postavi" BorderBrush="#3a3a3a" Foreground="#3a3a3a" Content="Поставы" HorizontalAlignment="Left" VerticalAlignment="Top" Tap="RB_Tap">
+                        <RadioButton.Background>
+                            <SolidColorBrush Color="#3a3a3a"/>
+                        </RadioButton.Background>
+                    </RadioButton>
+                    <RadioButton x:Name="Smorhon" BorderBrush="#3a3a3a" Foreground="#3a3a3a" Content="Сморгонь" HorizontalAlignment="Left" VerticalAlignment="Top" Tap="RB_Tap">
+                        <RadioButton.Background>
+                            <SolidColorBrush Color="#3a3a3a"/>
+                        </RadioButton.Background>
+                    </RadioButton>
+                </StackPanel>
+            </ScrollViewer>
+        </Grid>
+    </Grid>
+
+</phone:PhoneApplicationPage>

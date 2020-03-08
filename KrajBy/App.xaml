@@ -1,0 +1,29 @@
+﻿<Application 
+    x:Class="KrajBy.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"       
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone">
+
+    <!--Ресурсы приложения-->
+    <Application.Resources>
+        <DataTemplate x:Key="SmallPanoramaHeader">
+            <ContentPresenter>
+                <TextBlock Text="{Binding}" FontSize="35" />
+            </ContentPresenter>
+        </DataTemplate>
+        <DataTemplate x:Key="SmallPanoramaTitle">
+            <StackPanel>
+                <TextBlock Text="{Binding}" FontSize="50" Margin="0,70,0,0" FontWeight="ExtraBold" />
+            </StackPanel>
+        </DataTemplate>
+    </Application.Resources>
+
+    <Application.ApplicationLifetimeObjects>
+        <!--Обязательный объект, обрабатывающий события времени жизни приложения-->
+        <shell:PhoneApplicationService 
+            Launching="Application_Launching" Closing="Application_Closing" 
+            Activated="Application_Activated" Deactivated="Application_Deactivated"/>
+    </Application.ApplicationLifetimeObjects>
+
+</Application>
